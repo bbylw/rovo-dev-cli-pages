@@ -16,7 +16,7 @@
 
 ### EdgeOne Pages 部署
 本项目已通过 EdgeOne Pages 部署。您可以通过以下临时 URL 访问：
-[https://local-upload-1751245109158-narvbw6idl.edgeone.site?eo_token=bd68ede4face57250e58afaba66717fe&eo_time=1751245131](https://local-upload-1751245109158-narvbw6idl.edgeone.site?eo_token=bd68ede4face57250e58afaba66717fe&eo_time=1751245131)
+[https://rovocli.edgeone.app/)
 
 如需永久链接，请在 EdgeOne Pages 控制台绑定自定义域名。
 
