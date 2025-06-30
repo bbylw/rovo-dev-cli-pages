@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovo Dev CLI 介绍</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0052cc;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 3px solid #f0f0f0;
+            padding-bottom: 12px;
+            margin-top: 35px;
+            font-size: 2em;
+        }
+        p {
+            margin-bottom: 18px;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #f0f6ff;
+            border-left: 4px solid #0052cc;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.95em;
+            color: #777;
+        }
+        a {
+            color: #0052cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rovo Dev CLI 介绍</h1>
+        <p>Atlassian 推出了 <strong>Rovo Dev CLI</strong>，这是一款功能强大的人工智能代理，旨在无缝集成到您的开发终端中。</p>
+
+        <h2>Rovo Dev CLI 是什么？</h2>
+        <p>Rovo Dev 是 Atlassian 为软件开发者构建的 AI 代理，现在可以通过命令行界面 (CLI) 直接在您的终端中使用。这种集成将 Rovo Dev 的自然语言能力带入开发者最熟悉的环境之一，使您无需离开命令行即可实现更快、更智能的编码。</p>
+
+        <h2>连接 Jira、Confluence 等更多应用</h2>
+        <p>Rovo Dev 与 Atlassian 应用程序无缝集成，使开发者能够利用 Atlassian 工具的全套功能进行项目管理、协作和版本控制。通过 Rovo Dev CLI，您可以直接在终端中完成 Jira 工作项、轻松更新 Confluence 文档、维护文档、调试和理解复杂的代码库等等。Atlassian 生态系统的这一进步通过提供一个内聚的环境，让开发者能够简化工作流程并保持生产力，而无需切换上下文。</p>
+
+        <h2>为什么使用 Rovo Dev CLI？</h2>
+        <ul>
+            <li>🚀 通过 AI 辅助提高您的生产力</li>
+            <li>💻 保持在您的终端工作流中</li>
+            <li>🤝 通过 MCP 服务器连接您现有的工具</li>
+            <li>📚 提高代码质量和文档</li>
+            <li>⏱️ 节省日常编码任务的时间</li>
+        </ul>
+
+        <h2>功能概述：</h2>
+        <ul>
+            <li><strong>代码生成</strong>：获取 AI 辅助编写新的代码片段和函数</li>
+            <li><strong>代码理解</strong>：通过自然语言解释快速理解复杂的代码块</li>
+            <li><strong>代码审查</strong>：接收自动代码审查建议和改进</li>
+            <li><strong>文档帮助</strong>：生成和改进代码文档</li>
+        </ul>
+        <p>我们为您准备了详细的文档，您可以在<a href="https://rovodevagents-beta.atlassian.net/wiki/external/Yzc2NzI4MTk3YTBhNDdiYjkzZDhhZTc3MjE0ZmE4Y2Q" target="_blank">这里</a>找到。</p>
+
+        <h2>如何开始：</h2>
+        <p>要免费试用 Rovo Dev CLI 测试版，请<a href="https://www.atlassian.com/solutions/devops/ai-innovation" target="_blank">立即注册</a>。</p>
+
+        <h3>安装 Rovo Dev CLI</h3>
+        <p>Rovo Dev 作为 Atlassian 命令行界面 (ACLI) 的扩展提供。要安装 Rovo Dev：</p>
+        <ol>
+            <li>安装 ACLI（如果您已安装 ACLI，请更新到最新版本），请根据您的操作系统使用以下说明：</li>
+        </ol>
+        <ul>
+            <li><a href="https://developer.atlassian.com/cloud/acli/guides/install-macos/" target="_blank">macOS</a></li>
+            <li><a href="https://developer.atlassian.com/cloud/acli/guides/install-linux/" target="_blank">Linux</a></li>
+            <li><a href="https://developer.atlassian.com/cloud/acli/guides/install-windows/" target="_blank">Windows</a></li>
+        </ul>
+        <ol start="2">
+            <li>前往您的 <a href="https://id.atlassian.com/manage-profile/security/api-tokens" target="_blank">Atlassian 个人资料</a>，通过选择 <strong>创建 API 令牌</strong> 来创建无范围的 API 令牌。</li>
+            <li>在您的终端中，运行以下命令以使用您的 Atlassian 帐户进行授权：</li>
+        </ol>
+        <pre><code>acli rovodev auth login</code></pre>
+        <ol start="4">
+            <li>运行此命令以交互模式 (IM) 打开 Rovo Dev：</li>
+        </ol>
+        <pre><code>acli rovodev run</code></pre>
+
+        <h4>激活或停用 Rovo Dev CLI</h4>
+        <div style="background-color: #e0f2f7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+            <p>您需要 Rovo Dev Agents 管理员权限才能开启和关闭 Rovo Dev CLI。Rovo Dev CLI 作为 Rovo Dev Agents 测试版的一部分自动启用。</p>
+        </div>
+        <div style="background-color: #fff3cd; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+            <p>设置生效可能需要 1-3 个工作日。</p>
+            <p>目前禁用 Rovo Dev CLI 将影响整个组织对 Rovo Dev CLI 的访问，我们仍在努力实现站点级别控制。</p>
+            <p>一旦您注册 Rovo Dev CLI，您将在我们的文档中看到详细说明。</p>
+        </div>
+
+        <h3>如何获得支持：</h3>
+        <p>在 Rovo Dev CLI IM 模式下，您可以输入 <code>/feedback</code>，这将引导您进入 Rovo Dev 反馈论坛。</p>
+
+        <h4>报告错误</h4>
+        <p>运行反馈命令后，您还可以通过我们的反馈表单报告错误。</p>
+        <p>如果您无法运行该命令，可以通过<a href="https://rovodevagents.atlassian.net/servicedesk/customer/portal/1/group/1/create/45" target="_blank">此链接</a>直接访问我们的反馈表单。</p>
+        <p><strong>注意：</strong> 请您在我们的反馈论坛中分享您的反馈或支持相关问题，而不是在此帖子的评论区。</p>
+
+        <h3>测试版技术免责声明</h3>
+        <p>CLI 中的 Rovo Dev 是一个正在积极开发的测试版产品。我们只能支持一定数量的用户，而不会影响我们以提供一流质量和用户体验而闻名。一旦达到此限制，我们将创建候补名单，并随着容量的增加继续吸纳用户。该产品在测试期间免费提供。</p>
+
+        <h2>下一步是什么？</h2>
+        <p>这仅仅是个开始！我们正在根据您的经验积极开发新功能和改进。请继续关注此空间，成为第一批看到我们更新的用户。</p>
+
+        <h2>立即尝试！</h2>
+        <p>开始使用 Rovo Dev CLI，体验 AI 辅助开发的未来。</p>
+        <p><a href="https://www.atlassian.com/solutions/devops/ai-innovation" target="_blank">免费试用</a></p>
+
+        <h2>加入群组</h2>
+        <p>我们渴望了解您使用 Rovo Dev CLI 的体验。加入群组，与其他用户和我们的团队成员互动。</p>
+        <p>祝您编码愉快！🎉</p>
+        <div class="footer">
+            <p>内容摘要来自 <a href="https://community.atlassian.com/forums/Rovo-for-Software-Teams-Beta/Introducing-Rovo-Dev-CLI-AI-Powered-Development-in-your-terminal/ba-p/3043623" target="_blank">Atlassian 社区帖子</a>。</p>
+        </div>
+    </div>
+</body>
+</html>
