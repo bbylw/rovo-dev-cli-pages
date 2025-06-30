@@ -16,7 +16,8 @@
 
 ### EdgeOne Pages 部署
 本项目已通过 EdgeOne Pages 部署。您可以通过以下临时 URL 访问：
-[https://rovocli.edgeone.app/)
+
+[(https://rovocli.edgeone.app)
 
 如需永久链接，请在 EdgeOne Pages 控制台绑定自定义域名。
 
